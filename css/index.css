@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', cursive;
+    text-decoration: none;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    background-color: rgb(20, 20, 20);
+}
+h1{
+    color: rgb(236, 236, 236);
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 95px;
+}
+.heroimage{
+    background-size:cover; 
+	background-position:center; 
+    background-repeat: no-repeat;
+    position: relative;
+    height: 700px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(20, 20, 20)), url("../img/Fondo_header.jpg");
+    z-index: 200;
+}
+
+.ofertones{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.novedades{
+    max-width: 1200px;
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.reaparacion-imagen{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+.reparacion-imagen img{
+    width: 100%;
+}
+.reparacion{
+    display: grid;
+    margin:100px;
+    background-color: coral;
+}
+.reparacion-text{
+   display: flex;
+    position:fixed;
+align-content: flex-end;
+    justify-content: flex-end;
+    
+}
