@@ -10,7 +10,7 @@
     <link href="css/navbar.css" type="text/css" rel="stylesheet">
     <link href="css/index.css" type="text/css" rel="stylesheet">
     <link href="css/slider.css" type="text/css" rel="stylesheet">
-    <link href="css/index_novedades.css" type="text/css" rel="stylesheet">
+    <link href="css/articles/computers-articles.css" type="text/css" rel="stylesheet">
     <link href="css/global_footer.css" type="text/css" rel="stylesheet">
     <!--Link Css BoxIcons-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -23,11 +23,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap" rel="stylesheet">
     <!--Fin Links de la font "Gabarito"-->
     <title>Inicio</title>
+
+	<!--BOOTSTRAP-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<!--FIN BOOTSTRAP-->
 </head>
 
 <body>
     <?php
-    readfile("clases/global_navbar.php");
+    readfile("includes/global_navbar.php");
     ?>
 
     <main>
@@ -42,7 +47,7 @@
          <h1>Destacados</h1>
          <div class="novedades">
         <?php
-            include("clases/index_novedades.class.php");
+            include("includes/index_novedades.class.php");
             ?>
         </div>
         
@@ -64,10 +69,9 @@
         <h1>Añadidos Recientemente</h1>
         <div class="novedades">
         <?php
-            include("clases/index_novedades.class.php");
+            include("includes/index_novedades.class.php");
             ?>
         </div>
-
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script type="module" src="js/index.js"></script>
         
@@ -75,7 +79,7 @@
 
 
     <?php
-    readfile("clases/global_footer.php");
+    readfile("includes/global_footer.php");
     ?>
 </body>
 

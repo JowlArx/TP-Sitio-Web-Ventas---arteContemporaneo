@@ -1,5 +1,6 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 
+document.querySelector("#seese-wrap > header")
 const swiper1 = new Swiper(".slide-content", {
   slidesPerView: 3,
   spaceBetween: 25,
