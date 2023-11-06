@@ -1,3 +1,18 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['usuario'])){
+        echo '
+        <script>
+            alert("por favor inicia sesion")
+        </script>
+        ';
+        header("location: login-register/index.php");
+        session_destroy();
+        die();
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
