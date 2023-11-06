@@ -27,7 +27,7 @@
 
 <body>
     <?php
-    readfile("clases/global_navbar.php");
+    readfile("includes/global_navbar.php");
     ?>
 
     <main>
@@ -42,29 +42,15 @@
          <h1>Destacados</h1>
          <div class="novedades">
         <?php
-            include("clases/index_novedades.class.php");
+            include("includes/index_novedades.class.php");
             ?>
-        </div>
-        
-        
-        <h1>Servicio Reparacion</h1>
-        
-        <div class="reparacion">
-            <div class="reaparacion-imagen">
-                <img src="img/servicio-limpieza.png">
-            </div>
-            <div class="reparacion-text">
-                <h1>Problemas?</h1>
-                <p>blablalbalbalbalbalbalblablablablalbalb
-                balbalblablablbalblabl.</p>
-            </div>
         </div>
 
         <!--Añadidos Recientemente-->
         <h1>Añadidos Recientemente</h1>
         <div class="novedades">
         <?php
-            include("clases/index_novedades.class.php");
+            include("includes/index_novedades.class.php");
             ?>
         </div>
 
@@ -75,7 +61,7 @@
 
 
     <?php
-    readfile("clases/global_footer.php");
+    readfile("includes/global_footer.php");
     ?>
 </body>
 

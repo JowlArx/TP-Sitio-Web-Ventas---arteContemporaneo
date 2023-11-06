@@ -1,10 +1,9 @@
     <header>
-        <a href="index.php" class="logo"><img src="img/tossoni_logo.png" alt="Tossoni-Logo"></img><span>Tossoni</span></a>
+        <a href="index.php" class="logo"><img src="img/logo.png" alt="Tossoni-Logo"></img><span>Arteraneo</span></a>
         <ul class="navbar">
             <li><a href="index.php">Inicio</a></li>
-            <li><a href="computers.php">Computadoras</a></li>
-            <li><a href="#">Componentes</a></li>
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="cuadros.php">Cuadros</a></li>
+            <li><a href="login-register/index.php">Iniciar Sesion</a></li>
         </ul>
 
         <div class="main">

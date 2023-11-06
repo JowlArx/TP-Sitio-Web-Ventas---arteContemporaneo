@@ -7,16 +7,28 @@ if(isset($_POST['accion'])){
         case 'eliminar_producto':
             eliminar_producto();
 
-        break;        
+        break;
+        case 'eliminar_categoria':
+            eliminar_categoria();
+
+        break;                
         case 'editar_producto':
         editar_producto();
 
         break;
+        case 'editar_categoria':
+            editar_categoria();
+    
+            break;
 
         case 'insertar_productos':
         insertar_productos();
 
-        break;    
+        break; 
+        case 'insertar_categoria':
+            insertar_categoria();
+    
+            break;      
     }
 
 }
@@ -44,7 +56,19 @@ function insertar_productos(){
 
     mysqli_query($conexion, $consulta);
     
-    header("Location: ../paneldecontrol/views/index.php");
+    header("Location: ../paneldecontrol/views/cuadros.php");
+
+}
+function insertar_categoria(){
+
+    global $conexion;
+    extract($_POST);
+
+    $consulta="INSERT INTO categoria (nombre) VALUES ('$nombre');" ;
+
+    mysqli_query($conexion, $consulta);
+    
+    header("Location: ../paneldecontrol/views/categorias.php");
 
 }
 function editar_producto(){
@@ -65,7 +89,15 @@ function editar_producto(){
     $consulta="UPDATE productos SET nombre = '$nombre', descripcion = '$descripcion', color = '$color', precio = '$precio', cantidad = '$cantidad', categorias = '$categorias', imagen = '$imagenFin' WHERE id = $id";
 
     mysqli_query($conexion, $consulta);
-    header("Location: ../paneldecontrol/views/index.php");
+    header("Location: ../paneldecontrol/views/cuadros.php");
+}
+function editar_categoria(){
+
+    global $conexion;
+    extract($_POST);
+    $consulta="UPDATE categoria SET nombre = '$nombre' WHERE id = $id";
+    mysqli_query($conexion, $consulta);
+    header("Location: ../paneldecontrol/views/categorias.php");
 }
 function eliminar_producto(){
 
@@ -74,6 +106,15 @@ function eliminar_producto(){
     $id = $_POST['id'];
     $consulta = "DELETE FROM productos WHERE id = $id";
     mysqli_query($conexion, $consulta);
-    header("Location: ../paneldecontrol/views/index.php");
+    header("Location: ../paneldecontrol/views/cuadros.php");
+}
+function eliminar_categoria(){
+
+    global $conexion;
+    extract($_POST);
+    $id = $_POST['id'];
+    $consulta = "DELETE FROM categoria WHERE id = $id";
+    mysqli_query($conexion, $consulta);
+    header("Location: ../paneldecontrol/views/categorias.php");
 }
 ?>

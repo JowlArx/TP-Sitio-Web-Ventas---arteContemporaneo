@@ -23,7 +23,7 @@ h1{
     background-repeat: no-repeat;
     position: relative;
     height: 700px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(20, 20, 20)), url("../img/Fondo_header.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(20, 20, 20)), url("../img/fondo-header.jpg");
     z-index: 200;
 }
 

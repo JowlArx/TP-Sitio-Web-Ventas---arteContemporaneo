@@ -4,8 +4,8 @@
  * Validacion de datos para poder iniciar sesion
  */
 require_once ("../../sqlfunctions/db_connection.class.php");
-$correo=$_POST['correo'];
-$password=$_POST['password'];
+$correo=$_POST['login_correo'];
+$password=$_POST['login_pass'];
 session_start();
 $_SESSION['correo']=$correo;
 

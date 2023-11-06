@@ -1,54 +1,51 @@
-<div id="wrapper">
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
-    <div class="sidebar-brand-icon rotate-n-15">
+<?php
+error_reporting(0);
+session_start();
+$actualsesion = $_SESSION['correo'];
+
+if($actualsesion == null || $actualsesion == ''){
+
+    echo 'acceso denegado';
+    die();
+}
+?>
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Taller</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cuadros.php" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Cuadros</span></a>
+                    </li>
+                    <li>
+                        <a href="categorias.php" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Categorias</span> </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="dropdown pb-4">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://picsum.photos/200" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1"><?php echo $actualsesion?></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../session/cerrarSesion.php">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="sidebar-brand-text mx-3">ADMIN</div>
-</a>
-<hr class="sidebar-divider my-0">
-<li class="nav-item active">
-    <a class="nav-link" href="index.php">
-        <i class="material-icons-outlined"></i>
-        <span>Dashboard</span></a>
-</li>
-<hr class="sidebar-divider">
-<div class="sidebar-heading">
-    ADMINISTRADOR
 </div>
-
-<li class="nav-item">
-    <a class="nav-link collapsed" href="index.php">
-    <span class="material-icons">pattern</span>
-        <span>Productos</span>
-    </a>
-</li>
-<li class="nav-item">
-    <a class="nav-link collapsed" href="categorias.php">
-        <span class="material-icons">category</span>
-        <span>  Categorias</span>
-    </a>
-</li>
-<hr class="sidebar-divider">
-<div class="sidebar-heading">
-    PERFIL
-</div>
-<li class="nav-item">
-    <a class="nav-link collapsed" href="usuariosindex.php">
-        <span class="material-icons">people</span>
-        <span>Información usuario</span>
-    </a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="session/cerrarSesion.php">
-    <span class="material-icons">logout</span>
-        <span>Salir</span></a>
-        
-</li>
-
-<hr class="sidebar-divider d-none d-md-block">
-
-<div class="text-center d-none d-md-inline">
-    <button class="rounded-circle border-0"></button>
-</div>
-</ul>

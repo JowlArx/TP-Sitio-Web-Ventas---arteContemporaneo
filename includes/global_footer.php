@@ -10,8 +10,8 @@
         <div class="footer-content">
             <h4>CONTACTANOS</h4>
             <li>Tel: 2302</li>
-            <li>Correo: tossoni@gmail.com</li>
-            <li>Facebook: Tossoni</li>
+            <li>Correo: arteraneo@gmail.com</li>
+            <li>Facebook: arterano1</li>
         </div>
         <div class="footer-content">
             <h4>NOSOTROS</h4>
