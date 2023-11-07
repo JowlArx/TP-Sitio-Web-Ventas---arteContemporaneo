@@ -9,10 +9,10 @@
     $razonSocial = $_POST['register_razonSocial'];
     $cuit = $_POST['register_cuit'];
 
-           $query =  "INSERT INTO users(nombre, correo, usuario, password, razonSocial, cuit) 
+           $query =  "INSERT INTO user(nombre, correo, usuario, password, razonSocial, cuit) 
           VALUES('$nombre', '$correo', '$usuario', '$pass', '$razonSocial', '$cuit')";
     
-    $verifyCorreo = mysqli_query($con, "SELECT * FROM usuarios WHERE correo='$correo'");
+    $verifyCorreo = mysqli_query($con, "SELECT * FROM user WHERE correo='$correo'");
 
     if(mysqli_num_rows($verifyCorreo) > 0){
         echo '  <script>
@@ -23,7 +23,7 @@
              exit();
     }
 
-    $verifyUser = mysqli_query($con, "SELECT * FROM usuarios WHERE usuario='$usuario'");
+    $verifyUser = mysqli_query($con, "SELECT * FROM user WHERE usuario='$usuario'");
 
     if(mysqli_num_rows($verifyUser) > 0){
         echo '  <script>

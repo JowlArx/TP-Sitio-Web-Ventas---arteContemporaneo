@@ -20,9 +20,8 @@ $productos = mysqli_query($conexion, $sql);
     <link href="css/navbar.css" type="text/css" rel="stylesheet">
     <link href="css/index.css" type="text/css" rel="stylesheet">
     <link href="css/global_footer.css" type="text/css" rel="stylesheet">
-    <link href="css/articles/computers-articles.css" type="text/css" rel="stylesheet">
     <!--Link Css BoxIcons-->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <!--Links de la font "Gabarito"-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,24 +56,30 @@ $productos = mysqli_query($conexion, $sql);
         foreach ($productos as $key => $row) {
 ?> 
 
-     <div class="card">
-        <div class="card-img"><img width="100" src="data:image;base64,<?php echo base64_encode($row['imagen']); ?>" ></td</div>
-        <div class="card-title"><?php echo $row["nombre"];?></div>
-        <div class="card-subtitle">Hecho por: <?php echo $row["artista"];?></div>
-        <div class="card-subtitle"><?php echo $row["descripcion"];?></div>
-        <hr class="card-divider">
-        <div class="card-footer">
-            <div class="card-price"><span>$</span><?php echo $row["precio"];?></div>
-            <button class="card-btn">
-              <i class='bx bx-plus-medical'></i>
-            </button>
-        </div>
+     <div class = "card">
+    <img src="data:image;base64,<?php echo base64_encode($row['imagen']); ?>" alt="">
+    <div class="card-content">
+      <h2>
+        <?php echo $row["nombre"];?>
+      </h2>
+      <p>
+        <?php echo $row["descripcion"];?>
+      </p>
+      <a href="#" class="button">
+        Ver mas 
+        <span class="material-symbols-outlined">
+          arrow_right_alt
+        </span>
+      </a>
     </div>
+  </div> 
 
     <?php
         }
     }
-    ?>  
+    ?> 
+    
+     
     
 </div>
    <div>
