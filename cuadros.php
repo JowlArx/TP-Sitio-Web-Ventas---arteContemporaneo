@@ -60,6 +60,7 @@ $productos = mysqli_query($conexion, $sql);
      <div class="card">
         <div class="card-img"><img width="100" src="data:image;base64,<?php echo base64_encode($row['imagen']); ?>" ></td</div>
         <div class="card-title"><?php echo $row["nombre"];?></div>
+        <div class="card-subtitle">Hecho por: <?php echo $row["artista"];?></div>
         <div class="card-subtitle"><?php echo $row["descripcion"];?></div>
         <hr class="card-divider">
         <div class="card-footer">
