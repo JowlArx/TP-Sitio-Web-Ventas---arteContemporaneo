@@ -1,5 +1,5 @@
     <header>
-        <a href="index.php" class="logo"><img src="img/logo.png" alt="Tossoni-Logo"></img><span>Arteraneo</span></a>
+        <a href="index.php" class="logo"><img src="img/logo_pa_la_pagina.png" alt="Tossoni-Logo"></img><span>Arteraneo</span></a>
         <ul class="navbar">
             <li><a href="index.php">Inicio</a></li>
             <li><a href="cuadros.php">Cuadros</a></li>

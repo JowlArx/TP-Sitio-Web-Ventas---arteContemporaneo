@@ -74,6 +74,7 @@ align-content: flex-end;
 }
 
 .card {
+    margin-top: 20px;
     margin-left: 20px;
   width: 24rem;
   height: 36rem;

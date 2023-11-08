@@ -65,7 +65,7 @@ $productos = mysqli_query($conexion, $sql);
       <p>
         <?php echo $row["descripcion"];?>
       </p>
-      <a href="#" class="button">
+      <a href="detail.php?id=<?php echo $row["id"];?>" class="button">
         Ver mas 
         <span class="material-symbols-outlined">
           arrow_right_alt
