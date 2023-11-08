@@ -32,7 +32,11 @@
             <!--Formularios -->
             <div class="login_register_container">
                 <!--login-->
+<<<<<<< HEAD
+                <form action="../paneldecontrol/session/validar.php" method="POST" class="login_form">
+=======
                 <form action="assets/php/user_login.php" method="POST" class="login_form">
+>>>>>>> 0ee51d0d3cdf5a911789b242869301e791fef243
                     <h2> 
                         Iniciar sesion
                     </h2>

@@ -1,7 +1,7 @@
 
 <div class="list">
 <?php
-    while($row = mysqli_fetch_assoc($all_product)){
+    while($producto = mysqli_fetch_assoc($producto)){
 ?> 
 
      <div class="card">

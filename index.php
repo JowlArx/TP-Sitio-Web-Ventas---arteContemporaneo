@@ -65,20 +65,6 @@
             include("includes/index_novedades.class.php");
             ?>
         </div>
-        
-        
-        <h1>Servicio Reparacion</h1>
-        
-        <div class="reparacion">
-            <div class="reaparacion-imagen">
-                <img src="img/servicio-limpieza.png">
-            </div>
-            <div class="reparacion-text">
-                <h1>Problemas?</h1>
-                <p>blablalbalbalbalbalbalblablablablalbalb
-                balbalblablablbalblabl.</p>
-            </div>
-        </div>
 
         <!--Añadidos Recientemente-->
         <h1>Añadidos Recientemente</h1>

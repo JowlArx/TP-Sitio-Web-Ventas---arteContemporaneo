@@ -2,7 +2,7 @@
 /*Variables globales*/
 :root{
     --text-color: #fff;
-    --main-color: #f20530;
+    --main-color: #DE8F5F;
 }
 header{
     position: fixed;
@@ -21,7 +21,7 @@ header{
 .logo{
     display: flex;
     align-items: center;
-    width: 2.5%;
+    width: 2%;
     max-width: 100%;
 }
 .logo img{
